@@ -30,9 +30,15 @@ function reverseString(text) {
   return [...text].reverse().join("");
 }
 
+
+function countOccurrences(values, target) {
+  return values.filter(value => value === target).length;
+}
+
 // Run examples.
 console.log("Sum:", sum([1, 2, 3, 4, 5]));
 console.log("Empty sum:", sum([]));
 console.log("Unique:", unique([1, 2, 2, 3, 3, 4]));
 console.log("FizzBuzz:", fizzBuzz(15));
 console.log("Reverse:", reverseString("JavaScript"));
+console.log("Occurrences:", countOccurrences([1, 2, 2, 3, 2], 2)); // 3
