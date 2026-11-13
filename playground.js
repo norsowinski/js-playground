@@ -26,8 +26,13 @@ function fizzBuzz(limit) {
   });
 }
 
+function reverseString(text) {
+  return [...text].reverse().join("");
+}
+
 // Run examples.
 console.log("Sum:", sum([1, 2, 3, 4, 5]));
 console.log("Empty sum:", sum([]));
 console.log("Unique:", unique([1, 2, 2, 3, 3, 4]));
 console.log("FizzBuzz:", fizzBuzz(15));
+console.log("Reverse:", reverseString("JavaScript"));
